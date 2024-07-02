@@ -28,9 +28,13 @@
     <body class="container mx-auto mt-10 mb-10 max-w-lg">
       
         <h1 class="mb-4 text-2xl">@yield('title')</h1>
-        @if (session()->has('success'))
+        <div class="mb-10 font-bold">This is a flash message <div>
+        <!-- <div>{{ session('success')}}</div> -->
+        <!-- @if (session()->has('success'))
             <div>{{ session('success')}}</div>
-        @endif
-        <div>@yield('content')</div>
+        @endif -->
+        <div>
+            @yield('content')
+        </div>
     </body>
 </html>
